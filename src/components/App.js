@@ -10,8 +10,8 @@ const App = (props) => {
   }
   return (
     <div className="App" id="main">
-     <p id="para" className={invisible ? "show" :"hide"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
-     <button id="click" onClick={handleClick}>Show</button>
+     <p id="para" className={invisible ? "hide" :"show"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
+     <button id="click" onClick={handleClick}>{invisible ? "Show" :"Hide"}</button>
     </div>
   );
 }
