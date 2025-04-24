@@ -6,12 +6,12 @@ const App = (props) => {
   const [invisible, setInVisible]=useState(true)
   function handleClick(){
     console.log("clicked")
-    setInVisible(false)
+    setInVisible(invisible ? false: true)
   }
   return (
     <div className="App" id="main">
      <p id="para" className={invisible ? "show" :"hide"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
-     <button id="click" onClick={handleClick}>Hide</button>
+     <button id="click" onClick={handleClick}>Show</button>
     </div>
   );
 }
