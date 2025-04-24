@@ -3,11 +3,32 @@ import './../styles/App.css';
 
 const App = (props) => {
 
+  const [invisible, setInVisible]=useState("true")
+  function handleClick(){
+    setInVisible(false)
+  }
   return (
     <div className="App" id="main">
-      // Do not alter the main div
+     <p id="para" className={invisible ? "hide" :"show"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
+     <button id="click" onClick={handleClick}>Hide</button>
     </div>
   );
 }
 
 export default App
+
+
+
+// import React, { useState } from "react";
+// import './../styles/App.css';
+
+// const App = () => {
+  
+//   return (
+//     <div id="main">
+         
+//     </div>
+//   )
+// }
+
+// export default App
