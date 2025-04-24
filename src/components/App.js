@@ -3,13 +3,14 @@ import './../styles/App.css';
 
 const App = (props) => {
 
-  const [invisible, setInVisible]=useState("true")
+  const [invisible, setInVisible]=useState(true)
   function handleClick(){
+    console.log("clicked")
     setInVisible(false)
   }
   return (
     <div className="App" id="main">
-     <p id="para" className={invisible ? "hide" :"show"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
+     <p id="para" className={invisible ? "show" :"hide"}>"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>
      <button id="click" onClick={handleClick}>Hide</button>
     </div>
   );
